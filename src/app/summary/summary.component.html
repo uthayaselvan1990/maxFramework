@@ -1,0 +1,32 @@
+<div class="container main-content">
+  <div class="content">
+    <h1>Evaluation Summary</h1>
+    <div>
+      <div>
+        <div style="display: block">
+          <canvas
+            class="chart"
+            baseChart
+            [datasets]="radarChartData"
+            [options]="radarChartOptions"
+            [labels]="radarChartLabels"
+            [chartType]="radarChartType"
+          >
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="container btm-cont">
+      <div class="row">
+        <div class="col btm-left">
+          <img (click)="reEvaluate()" src="../assets/reEvaluate.svg" />
+          <p>Re ­Evaluate</p>
+        </div>
+        <div class="col btm-right">
+          <img (click)="report()" src="../assets/viewReport.svg" />
+          <p>View Report</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

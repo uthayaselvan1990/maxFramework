@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let category of catArray; let i = index">
+      <div class="app-arch">
+        <div class="app-arch-img">
+          <img src="../assets/{{ category.image }}" />
+        </div>
+        <h3>
+          {{ category.title }}
+          <span
+            class="dot {{ category.status == 2 ? 'yellow' : '' }} {{
+              category.status == 3 ? 'green' : ''
+            }}"
+          ></span>
+        </h3>
+        <p>{{ category.subTitle }}</p>
+        <p>
+          <b class="pointer" (click)="updateStatus(category.categoryId, 1)">
+            {{ category.status != 1 ? "Re ­Evaluate" : "­Evaluate" }}
+          </b>
+          <b
+            class="pointer right"
+            (click)="updateStatus(category.categoryId, 0)"
+          >
+            {{ category.status == 2 ? "Continue" : "" }}
+          </b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row rating-cont">
+    <div class="col-sm-9 border-cont">
+      <div>
+        <h3>Rating Guidelines</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3 rating-div">
+      <h3>Rating Method</h3>
+      <div class="rating-sub">
+        <h6>Good</h6>
+        <div class="rating">
+          <span><img src="../assets/activeStar.svg"/></span>
+          <span><img src="../assets/activeStar.svg"/></span>
+          <span><img src="../assets/activeStar.svg"/></span>
+        </div>
+      </div>
+      <div class="rating-sub">
+        <h6>Fair</h6>
+        <div class="rating">
+          <span><img src="../assets/activeStar.svg"/></span>
+          <span><img src="../assets/activeStar.svg"/></span>
+          <span><img src="../assets/inactiveStar.svg"/></span>
+        </div>
+      </div>
+      <div class="rating-sub">
+        <h6>Poor</h6>
+        <div class="rating">
+          <span><img src="../assets/activeStar.svg"/></span>
+          <span><img src="../assets/inactiveStar.svg"/></span>
+          <span><img src="../assets/inactiveStar.svg"/></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

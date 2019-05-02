@@ -1,0 +1,79 @@
+<div class="container main-content">
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          App Architecture
+        </li>
+      </ol>
+    </nav>
+    <div class="evaluation">
+      <h3>
+        App Architecture Evaluation
+        <div class="box green"></div>
+      </h3>
+      <p class="status">
+        The App Architecture evaluation score for your application based on your
+        ratings is {{ this.reviewPoint | number: "1.2-2" }}
+      </p>
+    </div>
+    <div class="row result-content">
+      <div class="col-sm-4 ">
+        <ul class="list-group row-content">
+          <li class="list-group-item"><h2>Rating Overview :</h2></li>
+          <li class="list-group-item">
+            <h3>Good</h3>
+            <p>
+              <ngb-progressbar
+                type="success"
+                [value]="goodAvg"
+              ></ngb-progressbar>
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h3>Fair</h3>
+            <p>
+              <ngb-progressbar
+                type="warning"
+                [value]="farAvg"
+              ></ngb-progressbar>
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h3>Poor</h3>
+            <p>
+              <ngb-progressbar
+                type="danger"
+                [value]="poorAvg"
+              ></ngb-progressbar>
+            </p>
+          </li>
+        </ul>
+        <div class="btm-content">
+          <img (click)="reEvaluate()" src="../assets/reEvaluate.svg" />
+          <p (click)="reEvaluate()">Re ­Evaluate</p>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="row-content">
+          <div class="round-status ">
+            <h3>{{ this.reviewPoint | number: "1.2-2" }}</h3>
+          </div>
+        </div>
+
+        <div class="btm-content center-ctn">
+          <img (click)="report()" src="../assets/viewReport.svg" />
+          <p (click)="report()">View Report</p>
+        </div>
+      </div>
+      <div class="col-sm-4 ">
+        <div class="row-content"></div>
+        <div class="btm-content">
+          <img src="../assets/continue.svg" />
+          <p>Continue Evaluation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

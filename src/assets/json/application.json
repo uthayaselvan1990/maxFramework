@@ -1,0 +1,86 @@
+[
+  {
+    "qusId": 1,
+    "catId": 1,
+    "qus": "The app offers accessibility features for people with visionloss, hearing loss and other disabilities",
+    "rating": "0"
+  },
+  {
+    "qusId": 2,
+    "catId": 1,
+    "qus": "There is sufficient color contrast between images and text.Customized loading screen is present on launch.",
+    "rating": "0"
+  },
+  {
+    "qusId": 3,
+    "catId": 1,
+    "qus": "Activity spinner is present while content is loading.",
+    "rating": "0"
+  },
+  {
+    "qusId": 4,
+    "catId": 1,
+    "qus": "Alerts are only for actionable information.",
+    "rating": "0"
+  },
+  {
+    "qusId": 5,
+    "catId": 1,
+    "qus": "Consistent transition style for modal views.",
+    "rating": "0"
+  },
+  {
+    "qusId": 6,
+    "catId": 1,
+    "qus": "Navigation feels logical, predictable and easy to follow.",
+    "rating": "0"
+  },
+  {
+    "qusId": 7,
+    "catId": 1,
+    "qus": "User is aware of his current position and how to get to the destination.",
+    "rating": "0"
+  },
+  {
+    "qusId": 8,
+    "catId": 1,
+    "qus": "Information can be accessed through minimum number of taps.",
+    "rating": "0"
+  },
+  {
+    "qusId": 9,
+    "catId": 1,
+    "qus": "Familiar navigation components like page controls, tab bars, segmented controls are used.",
+    "rating": "0"
+  },
+  {
+    "qusId": 10,
+    "catId": 1,
+    "qus": "The navigation bar shows the current position in the hierarchy of data.",
+    "rating": "0"
+  },
+  {
+    "qusId": 11,
+    "catId": 1,
+    "qus": "Launch screen appears the moment the app starts showing progress.",
+    "rating": "0"
+  },
+  {
+    "qusId": 12,
+    "catId": 1,
+    "qus": "App supports both portrait and landscape modes.",
+    "rating": "0"
+  },
+  {
+    "qusId": 13,
+    "catId": 1,
+    "qus": "Request permission to access personal information, location, calendar, contacts, photos, files and folders if needed when the app starts.",
+    "rating": "0"
+  },
+  {
+    "qusId": 14,
+    "catId": 1,
+    "qus": "Settings option is available to configure choices",
+    "rating": "0"
+  }
+]

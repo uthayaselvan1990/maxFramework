@@ -1,0 +1,100 @@
+<div class="container main-content">
+  <div class="content main-blk">
+    <div class="icon">
+      <img (click)="print()" src="../assets/print.svg" />
+      <img (click)="download()" src="../assets/download.svg" />
+    </div>
+    <div id="print-section">
+      <h3>Evaluation Report</h3>
+      <div class="container cnt-blk">
+        <h3>Evaluation Overview :</h3>
+        <h2>
+          Architecture
+        </h2>
+
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let question of qusArray; let j = index"
+          >
+            <div class="row">
+              <div class="col-sm-10">
+                <p>
+                  {{ question.question }}
+                </p>
+              </div>
+              <div class="col-sm-2">
+                <div class="rate" (click)="j == 3 ? changeTab(i + 1) : false">
+                  <ngb-rating class="right" [(rate)]="question.rating"
+                    ><ng-template let-fill="fill" let-index="index">
+                      <span
+                        class="star"
+                        [class.filled]="fill === 100"
+                        [class.bad]="index < 3"
+                        >&#9733;</span
+                      >
+                    </ng-template>
+                  </ngb-rating>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-6 ">
+            <div class="row-content">
+              <div class="round-status "><h3>1.73</h3></div>
+            </div>
+          </div>
+          <div class="col-sm-6 ">
+            <ul class="list-group row-content">
+              <li class="list-group-item"><h2>Rating Overview :</h2></li>
+              <li class="list-group-item">
+                <h3>Good</h3>
+                <p>
+                  <ngb-progressbar
+                    type="success"
+                    [value]="25"
+                  ></ngb-progressbar>
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h3>Fair</h3>
+                <p>
+                  <ngb-progressbar
+                    type="warning"
+                    [value]="75"
+                  ></ngb-progressbar>
+                </p>
+              </li>
+              <li class="list-group-item">
+                <h3>Poor</h3>
+                <p>
+                  <ngb-progressbar
+                    type="danger"
+                    [value]="100"
+                  ></ngb-progressbar>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h2>App Rating Summary</h2>
+        <p class="summary">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridicul us mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat mas sa quis enim. Donec pede justo, fringilla vel, aliquet
+          nec, vulputate eget, arcu. In enim justo, rhon cus ut, imperdiet a,
+          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          Integer tincid unt. Cras dapibus. Vivamus elementum semper nisi.
+          Aenean vulputate eleifend tellus. Aenean leo gula, porttitor eu,
+          consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+          viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+          varius laoreet.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="container main-content">
+  <div class="content">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/evaluate">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          App Architecture
+        </li>
+      </ol>
+    </nav>
+    <div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div
+          *ngFor="let tabCount of qusArray; let i = index"
+          role="tabpanel"
+          class="tab-pane {{ i == 0 ? 'active' : '' }}"
+          id="tab_{{ i }}"
+        >
+          <ul class="list-group">
+            <li
+              class="list-group-item"
+              *ngFor="let question of qusArray[i]; let j = index"
+            >
+              <div class="row">
+                <div class="col-sm-10">
+                  <p>
+                    {{ question.question }}
+                  </p>
+                </div>
+                <div class="col-sm-2">
+                  <div
+                    class="rate"
+                    (click)="
+                      j == qusArray[i].length - 1 ? changeTab(i + 1) : false
+                    "
+                  >
+                    <ngb-rating class="right" [(rate)]="question.rating"
+                      ><ng-template let-fill="fill" let-index="index">
+                        <span
+                          class="star"
+                          [class.filled]="fill === 100"
+                          [class.bad]="index < 3"
+                          >&#9733;</span
+                        >
+                      </ng-template>
+                    </ngb-rating>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <input type="hidden" id="calculate" (click)="calculate()" />
+        </div>
+      </div>
+      <!-- Nav tabs -->
+      <ul class="nav" role="tablist">
+        <li
+          role="presentation"
+          *ngFor="let tabCount of qusArray; let i = index"
+        >
+          <a
+            href="#tab_{{ i }}"
+            class="tab_{{ i }}"
+            role="tab"
+            data-toggle="tab"
+            id="tab_button"
+            (click)="setCurrentTab(i)"
+          >
+            <div class="box" [ngClass]="{ active: i == currentTab }"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

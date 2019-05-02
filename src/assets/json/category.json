@@ -1,0 +1,44 @@
+[
+  {
+    "catId": 1,
+    "title": "App Architecture",
+    "subTitle": "The overall build and structure of the app",
+    "image": "appArchitecture.svg",
+    "status": "Re ­Evaluate"
+  },
+  {
+    "catId": 2,
+    "title": "User Interaction",
+    "subTitle": "The interactive elements that provide feedback and give results",
+    "image": "userInteraction.svg",
+    "status": "Evaluate"
+  },
+  {
+    "catId": 3,
+    "title": "App Capabilities",
+    "subTitle": "The immersive and engaging aspects",
+    "image": "appCapabilitues.svg",
+    "status": "Evaluate"
+  },
+  {
+    "catId": 4,
+    "title": "Visual Design",
+    "subTitle": "The adaptable interface elements & layouts",
+    "image": "visualDesign.svg",
+    "status": "Evaluate"
+  },
+  {
+    "catId": 5,
+    "title": "Icons & Images",
+    "subTitle": "The graphic and communicative representations",
+    "image": "iconsImages.svg",
+    "status": "Evaluate"
+  },
+  {
+    "catId": 6,
+    "title": "Usability",
+    "subTitle": "The ease of use factor",
+    "image": "usability.svg",
+    "status": "Evaluate"
+  }
+]

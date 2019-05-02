@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  padding: 20px 40px;
+  box-shadow: 0 0.125rem 0.25rem #bdbdbd !important;
+}
+.right-menu {
+  float: right;
+}
+.right-menu img {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.header img {
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .header {
+    height: 55px;
+    padding: 15px 20px;
+  }
+  .logo {
+    width: 130px;
+  }
+}

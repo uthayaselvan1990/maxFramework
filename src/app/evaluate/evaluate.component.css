@@ -1,0 +1,91 @@
+.app-arch,
+.user-inter,
+.app-cap {
+  margin-top: 20px;
+  box-shadow: 0 0.125rem 0.25rem #bdbdbd !important;
+  padding: 0px;
+  min-height: 275px;
+}
+
+.app-arch-img {
+  text-align: center;
+  height: 150px;
+  background: #434343;
+  margin-bottom: 10px;
+  position: relative;
+}
+.app-arch-img img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.app-arch h3 {
+  font-size: 1.4rem;
+}
+.app-arch-img:hover {
+  background: #f8f8f8;
+}
+
+.user-inter,
+.app-cap {
+  margin-left: 15px;
+}
+
+h3,
+p {
+  padding: 0px 15px;
+}
+
+.container p {
+  height: 30px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #c3c3c3;
+  border-radius: 50%;
+  display: inline-block;
+}
+.yellow {
+  background-color: #face57;
+}
+.green {
+  background-color: #1eb965;
+}
+.rating-div .rating-sub h6 {
+  width: 45%;
+  float: left;
+  clear: both;
+}
+.rating-cont h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0;
+}
+.rating img {
+  /* margin-top: 10px; */
+}
+
+.rating {
+  height: 25px;
+}
+
+.rating-cont {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.border-cont {
+  border-right: 1px solid #c3c3c3;
+}
+.pointer {
+  cursor: pointer;
+}
+.right {
+  float: right;
+  border-bottom: 2px solid black;
+}

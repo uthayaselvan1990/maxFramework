@@ -1,0 +1,48 @@
+.main-content {
+  background: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0 0.125rem 0.25rem #434343 !important;
+  text-align: center;
+  color: #c3c3c3;
+  padding: 15px 0px;
+}
+
+.main-content .main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.content {
+  padding: 50px;
+  width: 25%;
+  margin: auto;
+}
+
+.content img {
+  float: left;
+  padding-top: 5px;
+}
+
+.content p {
+  font-weight: 400;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .main-content {
+    margin: 20px 20px;
+  }
+  .main-img {
+    width: 90%;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+  }
+}
